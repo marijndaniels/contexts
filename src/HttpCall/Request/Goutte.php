@@ -38,7 +38,7 @@ class Goutte extends BrowserKit
         $this->requestHeaders[$name] = $value;
     }
 
-    private function resetHttpHeaders()
+    protected function resetHttpHeaders()
     {
         $this->requestHeaders = [];
     }
